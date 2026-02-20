@@ -1,5 +1,5 @@
 image:
-  repository: t1mssc/devops-learning
+  repository: timss/devops-learning
   tag: 981c445
   pullPolicy: IfNotPresent
 service:
