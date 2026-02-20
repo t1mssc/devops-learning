@@ -37,4 +37,3 @@
 {{- range .Values.httpRoute.parentRefs }}
 - ParentRef: {{ . }}
 {{- end }}
-{{- end }}
