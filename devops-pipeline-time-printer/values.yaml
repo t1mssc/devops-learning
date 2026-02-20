@@ -1,6 +1,6 @@
 image:
   repository: timss/devops-learning
-  tag: 981c445
+  tag: f61de86
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
