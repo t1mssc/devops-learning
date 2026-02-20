@@ -4,7 +4,7 @@ image:
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
-  ports: 9001
+  ports: 9002
 ingress: 
   enabled: false
 serviceAccount:
