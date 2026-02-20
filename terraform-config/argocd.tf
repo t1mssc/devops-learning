@@ -7,10 +7,10 @@ resource "helm_release" "argocd" {
   namespace = "argocd"
   create_namespace = "true"
   values = [
-    <<EOF
+    <<-EOF
     server:
         service:
-            type: ClusterIP
+            type: NodePort
     EOF        
   ]
 }
