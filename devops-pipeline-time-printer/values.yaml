@@ -10,4 +10,6 @@ ingress:
 serviceAccount:
   enabled: false
 autoscaling:
-  enabled: false        
+  enabled: false
+httpRoute:
+  enabled: true          
