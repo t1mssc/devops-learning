@@ -24,3 +24,12 @@ jobs:
       - name: Push to Docker Hub
         run: |
           docker push timss/devops-learning:${{ env.SHORT_SHA }}
+      - name: Configure Git Author
+        run: |
+          git config --local user.name "CJ Castillo" 
+      - name: Update Helm Chart with new Image Tag
+        run: |
+          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./devops-pipeline-time-printer/values.yaml
+          git add  ./devops-pipeline-time-printer/values.yaml
+          git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
+          git push     

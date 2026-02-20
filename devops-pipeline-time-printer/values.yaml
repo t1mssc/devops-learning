@@ -1,0 +1,13 @@
+image:
+  repository: timss/devops-learning
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  ports: 9001
+ingress: 
+  enabled: false
+serviceAccount:
+  enabled: false
+autoscaling:
+  enabled: false        

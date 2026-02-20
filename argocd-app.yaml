@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: DevOps Learning
+  namespace: argocd
+spec:
+  projects: default
+  source:
+    repoURL: "https://github.com/t1mssc/devops-learning"
+    targetRevision: HEAD
+    path: devops-pipeline-time-printer
+  destination: 
+    server: "https://kubernetes.default.svc"
+    namespace: default  
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
