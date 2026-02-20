@@ -1,6 +1,6 @@
 image:
   repository: t1mssc/devops-learning
-  tag: 981c445
+  tag: 7e9f65e
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
