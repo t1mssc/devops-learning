@@ -17,7 +17,7 @@ provider "minikube" {
 
 resource "minikube_cluster" "minikube_docker" {
   driver = "docker"
-  cluster_name = "devops"
+  cluster_name = "minikube"
 
   memory = 4096
   cpus   = 2
