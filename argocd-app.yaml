@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: DevOps Learning
+  name: devops-learning
   namespace: argocd
 spec:
-  projects: default
+  project: default
   source:
     repoURL: "https://github.com/t1mssc/devops-learning"
     targetRevision: HEAD
