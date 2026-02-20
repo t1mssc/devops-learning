@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: "https://github.com/t1mssc/devops-learning"
-    targetRevision: HEAD
+    targetRevision: main
     path: devops-pipeline-time-printer
   destination: 
     server: "https://kubernetes.default.svc"
